@@ -1,0 +1,521 @@
+@import 'base/base';
+@import 'base/fonts';
+
+header{
+    height: 700px;
+    background-image: url('../image/Background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 46px;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+.retretTop{
+    margin-top: 95px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    p{
+        color: #FFFFFF;
+        font-family: 'Montserrat-Bold';
+        font-size: 20px;
+        line-height: 24px;
+    }
+    ul{
+        display: flex;
+        margin-top: -40px;
+        li{ 
+            a{
+                padding-top: 8px;
+                text-align: center;
+                display: block;
+                width: 90px;
+                height: 36px;
+                text-decoration: none;
+                color: #FFFFFF;
+                font-family: 'Montserrat-Regular';
+                font-size: 14px;
+                line-height: 17px;
+                border: none;
+                &:hover{
+                    border: 2px solid white;
+                    border-radius: 18px;
+                }
+            }
+        }
+    }
+}
+
+.info{
+    width: 470px;
+    margin: 153px auto;
+    display: flex;
+    flex-direction: column;
+    &-title{
+        margin: 0 auto;
+        color: #FFFFFF;
+        font-family: 'Montserrat-Bold';
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 63px;
+    }
+    &-text{
+        margin: 28px auto 33px;
+        color: #F7F3F2;
+        font-family: 'Roboto-Light';
+        font-size: 24px;
+        line-height: 25px;
+    }
+    input{
+        width: 225px;
+        height: 40px;
+        margin: 0 auto;
+        background-color: #FF4E50;
+        border-radius: 20px;
+        color: #FFFFFF;
+        font-family: 'Montserrat-Bold';
+        font-size: 14px;
+        line-height: 17px;
+        border: none;
+    }
+}
+
+.content{
+    &-title{
+        font-size: 26px;
+        line-height: 32px;
+        font-family: 'Montserrat-Bold';
+        font-weight: 700;
+        color: #444444;
+        text-align: center;
+    }
+    &-body{
+        margin-top: 35px;
+        display: flex;
+        
+        &-box{
+            width: 300px;
+            height: 400px;
+            padding: 21px 25px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            input{
+                width: 70px;
+                height: 20px;
+                background-color: #FF4E50;
+                border-radius: 10px;
+                color: #FFFFFF;
+                font-family: 'Montserrat-Regular';
+                font-size: 10px;
+                line-height: 12px;
+                border: none;
+            }
+            &-title{
+                font-size: 24px;
+                line-height: 26px;
+                font-family: 'Montserrat-Bold';
+                font-weight: 700;
+                color: #FFFFFF;
+                margin: 15px 0 20px;
+            }
+            &-text{
+                font-size: 14px;
+                line-height: 14px;
+                font-family: 'Roboto-Light';
+                color: #E3E3E3;
+            }
+        }
+        .backgroundImage_1{
+            background-image: url('../image/Step\ 1\ image.png');
+        }
+        .backgroundImage_2{
+            background-image: url('../image/Step\ 2\ image.png');
+            margin: 0 20px;
+        }
+        .backgroundImage_3{
+            background-image: url('../image/Step\ 3\ image.png');
+        }
+        h4{
+            font-size: 14px;
+            line-height: 17px;
+            font-family: 'Montserrat-Bold';
+            color: #444444;
+            font-weight: 700;
+            margin: 17px 0 20px;
+        }
+        .center_partners{
+            display: flex;
+        }
+        .partners_position{
+            display: flex;
+        }
+        figure{
+            width: 221px;
+            margin-right: 19px;
+            text-align: center;
+        }
+
+        &-holiday{
+            display: grid;
+            width: 940px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 310px 310px 310px;
+            gap: 20px 20px;
+            font-size: 22px;
+            line-height: 27px;
+            font-family: 'Montserrat-Bold';
+            color: #FFFFFF;
+            %ba_position{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            %text_center{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .item_1{
+                background-image: url('../image/item_1.png');
+                @extend %ba_position;
+                @extend %text_center;
+            }
+            .item_2{
+                background-image: url('../image/item_2.png');
+                @extend %ba_position;
+                @extend %text_center;
+            }
+            .item_3{
+                background-image: url('../image/item_3.png');
+                @extend %ba_position;
+                @extend %text_center;
+            }
+            .item_4{
+                background-image: url('../image/item_4.png');
+                @extend %ba_position;
+                @extend %text_center;
+            }
+            .item_5{
+                background-image: url('../image/item_5.png');
+                @extend %ba_position;
+                @extend %text_center;
+                grid-column: 2 / 4;
+            }
+            .item_6{
+                background-image: url('../image/item_6.png');
+                @extend %ba_position;
+                @extend %text_center;
+                grid-column: 1 / 3;
+            }
+            .item_7{
+                background-image: url('../image/item_7.png');
+                @extend %ba_position;
+                @extend %text_center;
+            }
+        }
+    }
+}
+
+
+a{
+    display: block;
+    text-align: center;
+    padding-top: 9px;
+    width: 180px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Montserrat-Bold';
+    color: #FF4E50;
+    margin-top: 36px;
+    border-radius: 20px;
+    border: 2px solid #FF4E50;
+    margin: 36px auto;
+}
+
+.question{
+    font-size: 18px;
+    line-height: 14px;
+    font-family: 'Roboto-Light';
+    color: #666666;
+    text-align: center;
+    margin: 43px 0 25px;
+}
+input[type="text"]{
+    width: 299px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Roboto-Light';
+    color: #999999;
+    padding-left: 39px;
+    border: 1px solid #D4D4D4;
+    border-radius: 3px;
+}
+.inp{
+    text-align: center;
+}
+input[value="Search partners"]{
+    width: 172px;
+    height: 40px;
+    background-color: #FF4E50;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: 'Montserrat-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    margin-left: 34px;
+}
+
+
+footer{
+    margin: 95px 0 41px;
+    hr{
+        border: 1px solid #FF4E50;
+        margin-bottom: 36px;
+    }
+    .footerFlex{
+        display: flex;
+        h1{
+            font-size: 16px;
+            line-height: 20px;
+            font-family: 'Montserrat-Regular';
+            color: #FF4E50;
+            margin-right: 122px;
+        }
+        h4{
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            font-family: 'Montserrat-Bold';
+            color: #444444;
+            margin-bottom: 11px;
+        }
+        li{
+            font-size: 14px;
+            line-height: 26px;
+            font-family: 'Roboto-Light';
+            color: #999999;
+            margin-right: 125px;
+        }
+        .logo{
+            font-size: 10px;
+            line-height: 12px;
+            font-family: 'Montserrat-Bold';
+            color: #CCCCCC;
+            text-align: right;
+            margin-left: 287px;
+            p{
+                margin-bottom: 7px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px){
+    .container{
+        width: 748px;
+    }
+    .content{
+        &-title{
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &-body{
+            &-box{
+                width: 236px;
+                padding: 16px 20px;
+                &-title{
+                    line-height: 14px;
+                }
+            }
+            .center_partners{
+                margin: 0 auto;
+            }
+            .partners_position{
+                display: block;
+                .margTopLeft{
+                    margin-top: 50px;
+                }
+                .margTopRight{
+                    margin-top: 35px;
+                }
+            }
+            figure{
+                width: 236px;
+            }
+        }
+    }
+
+    input[value="Search partners"]{
+        margin-left: 10px;
+    }  
+    
+    footer{
+        margin: 100px 0 20px;
+        .footerFlex{
+            h1{
+                margin-left: 40px;
+                margin-right: 108px;
+            }
+            li{
+                margin-right: 56px;
+            }
+            .logo{
+                margin-left: 118px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px){
+    .container{
+        width: 300px;
+    }
+    header{
+        height: 540px;
+    }
+    .retretTop{
+        margin-top: 35px;
+    }
+    nav{
+        flex-direction: column-reverse;
+        align-items: center;  
+        ul{
+            margin-top: -26px;
+        }
+        p{
+            margin-top: 51px;
+        }
+    }
+    .info{
+        width: 281px;
+        margin-top: 27px;
+        &-title{
+        font-size: 30px;
+        line-height: 37px;
+        }
+        &-text{
+            margin: 6px auto 15px;
+            font-size: 18px;
+            line-height: 25px;
+            padding: 0 10px;
+            text-align: center;
+        }
+        input{
+            width: 280px;
+        }
+    }
+    .content{
+        &-body{
+            margin-top: 14px;
+            flex-direction: column;
+            &-box{
+                width: 300px;
+                height: 240px;
+                padding-right: 30px;
+            }
+            .backgroundImage_2{
+                margin: 10px 0;
+            }
+            .center_partners{
+                flex-direction: column;
+            }
+            .partners_position{
+                .margTopLeft{
+                    margin-top: 16px;
+                }
+                .margTopRight{
+                    margin-top: 16px;
+                }
+            }
+            figure{
+                margin-top: 16px;
+            }
+
+            &-holiday{
+                width: 300px;
+                grid-template-columns: 300px 0 0;
+                grid-template-rows: 120px 120px 120px 120px 120px 120px 120px;
+                gap: 10px;
+                .item_2{
+                    grid-column: 1 / 2;
+                }
+                .item_3{
+                    grid-column: 1 / 2;
+                }
+                .item_4{
+                    grid-column: 1 / 2;
+                }
+                .item_5{
+                    grid-column: 1 / 2;
+                }
+                .item_6{
+                    grid-column: 1 / 2;
+                }
+                .item_7{
+                    grid-column: 1 / 2;
+                }
+            }
+        }        
+    }
+    a{
+        width: 280px;
+    }
+    .question{
+        margin: 9px 0 15px;
+    }
+    input[type="text"]{
+        width: 280px;
+    }
+    input[value="Search partners"]{
+        width: 280px;
+        margin: 10px 0;
+    }
+
+    footer{
+        margin: 40px 0 22px;
+        .footerFlex{
+            flex-direction: column;
+            hr{
+                margin-bottom: 19px;
+            }
+            h1{
+                margin: 0;
+                text-align: center;
+            }
+            h4{
+                margin: 13px 0 1px;
+                text-align: center;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 280px;
+                justify-content: center;
+                li{
+                    margin-right: 15px;
+                }
+                margin: 0 auto;
+            }
+            .logo{
+                margin: 14px 0 0;
+                text-align: center;
+            }
+        }
+    }
+}

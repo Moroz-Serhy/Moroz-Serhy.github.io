@@ -1,0 +1,6 @@
+@mixin boxText ($c, $ff, $fs, $lh) {
+    color: $c;
+    font-family: $ff;
+    font-size: $fs;
+    line-height: $lh;
+}
